@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <!--  
+ 	1.namespace：需要映射的接口的全类名
+ 	2.id：映射的接口方法
+ 	3.resultType：返回值类型 全类名
+ 	4.id:传入的id值 
+ --> 
+<mapper namespace="cn.it.dao.TeacherDao">
+<select id="getTeacherById" resultType="cn.it.bean.Teacher">
+	select * from t_teacher where id=#{id}
+</select>
+		
+</mapper>

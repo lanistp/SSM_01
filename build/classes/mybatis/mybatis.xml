@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!--设置延时加载 -->
+	<settings>
+		<!--true: 所有关联对象都会延迟加载。 -->
+		<setting name="lazyLoadingEnabled" value="true" />
+		<!--false:每个延迟加载属性会按需加载 -->
+		<setting name="aggressiveLazyLoading" value="false" />
+
+		<!--二级(全局)缓存，默认是打开的。配上只是看其状态。 -->
+		<setting name="cacheEnabled" value="true" />
+	</settings>
+</configuration>
